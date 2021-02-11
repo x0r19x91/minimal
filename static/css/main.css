@@ -74,10 +74,6 @@ img {
 
 /* Colored links */
 
-a:link, a:visited {
-    color: var(--accent);
-}
-
 a.icon:hover {
     text-decoration: none;
 }
@@ -138,4 +134,12 @@ a .item-tag:parent {
 
 footer {
     border-bottom: var(--border-width) solid var(--accent);
+}
+
+.content a {
+    color: #ff4848;
+}
+
+p code {
+    color: red;
 }
