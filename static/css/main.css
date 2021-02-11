@@ -9,6 +9,11 @@ body {
     flex-direction: column;
 }
 
+pre {
+    background-color: inherit !important;
+    padding: 12px !important;
+}
+
 pre > code {
     padding: 12px !important;
     border-radius: 4px !important;
