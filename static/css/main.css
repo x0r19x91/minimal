@@ -141,5 +141,5 @@ footer {
 }
 
 h4 a, .pages a, footer a {
-    color: #ff2f2f;
+    color: #ff2f2f !important;
 }
