@@ -106,15 +106,15 @@ a:hover {
 
 /* Colored borders at top/bottom of page */
 
+.navbar-default {
+    background-color:#0f0f0f;
+    border-color:#0f0f0f;
+}
+
 .navbar.navbar-default {
     border-top: var(--border-width) solid var(--accent);
 }
 
 footer {
     border-bottom: var(--border-width) solid var(--accent);
-}
-
-.navbar-default {
-    background-color:#0f0f0f;
-    border-color:#0f0f0f;
 }
