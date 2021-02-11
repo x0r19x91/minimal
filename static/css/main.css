@@ -9,6 +9,11 @@ body {
     flex-direction: column;
 }
 
+pre > code {
+    padding: 0px !important;
+    border-radius: 0px !important;
+}
+
 code {
     text-align: left;
     color:#abb2bf !important;
@@ -107,8 +112,8 @@ a:hover {
 /* Colored borders at top/bottom of page */
 
 .navbar-default {
-    background-color:#0f0f0f;
-    border-color:#0f0f0f;
+    background-color: #0f0f0f !important;
+    border-color: #0f0f0f !important;
 }
 
 .navbar.navbar-default {
