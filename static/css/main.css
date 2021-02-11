@@ -33,12 +33,12 @@ img {
 }
 
 .intro > h1 {
-    color: #212121;
+    color: #fff;
     font-size: 12vh;
 }
 
 .intro > h2 {
-    color: #757575;
+    color: #fff;
     font-size: 3vmin;
 }
 
