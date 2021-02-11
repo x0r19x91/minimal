@@ -11,7 +11,8 @@ body {
 
 code {
     text-align: left;
-    background-color: #1d1e1e;
+    color:#abb2bf !important;
+    background-color: #1d1e1e !important;
 }
 
 main {
