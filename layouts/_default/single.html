@@ -6,7 +6,11 @@
         <h2>{{ .Title }}</h2>
         <h5>{{ .Description }}</h5>
         {{ if isset .Params "link" }}
-            <a>{{ .Params.Link }}</a>
+            <div>
+                <a style="color: #ff2f2f" href="{{ .Params.Link }}">
+                    {{ .Params.Link }}
+                </a>
+            </div>
         {{ end }}
         {{ partial "tags" . }}
     </div>
