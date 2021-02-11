@@ -103,9 +103,8 @@ a:hover {
     color: #ff4848 !important;
 }
 
-a > .item-tag {
+a .item-tag:parent {
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 /* Navigation icons */
