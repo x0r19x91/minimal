@@ -7,7 +7,7 @@
 	  {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
         <a href={{ .RelPermalink }} title="All pages with tag <i>{{$name}}</i>">
             {{$name}}
-            <span class="badge">{{cnt}}</span>
+            <span class="badge">{{$cnt}}</span>
         </a>
 	  {{end}}
 	{{end}}
