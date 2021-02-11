@@ -3,9 +3,6 @@
 <main>
 
     <h2>{{ .Title }}</h2>
-    {{ range .Params.tags }}
-    <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}"><kbd class="item-tag">{{ . }}</kbd></a>
-    {{ end }}
 
     {{ range (.Paginator 5).Pages }} {{ partial "list-item" . }} {{ end }}
 
