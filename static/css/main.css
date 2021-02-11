@@ -144,8 +144,11 @@ a .item-tag:parent {
 
 .navbar-default {
     background-color: #0f0f0f !important;
-    color: #eee !important;
     border-color: #0f0f0f !important;
+}
+
+.navbar-default a {
+    color: #eee !important;
 }
 
 .navbar.navbar-default {
