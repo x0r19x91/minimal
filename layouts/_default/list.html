@@ -3,7 +3,7 @@
 <main>
 
     <h2>{{ .Title }}</h2>
-    {{ if ne .Title "Projects" }}
+    {{ if eq .Title "Posts" }}
         {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
             {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
                 <span>
