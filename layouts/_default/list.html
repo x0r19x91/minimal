@@ -3,14 +3,16 @@
 <main>
 
     <h2>{{ .Title }}</h2>
-    {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
-	  {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-          <span>
-            <a href={{ .RelPermalink }} title="All pages with tag <i>{{$name}}</i>">{{$name}}</a>
-            <sup>{{$cnt}}</sup>
-          </span>
-	  {{end}}
-	{{end}}
+    {{ if ne .Title "Projects" }}
+        {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
+            {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                <span>
+                <a href={{ .RelPermalink }} title="All pages with tag <i>{{$name}}</i>">{{$name}}</a>
+                <sup>{{$cnt}}</sup>
+                </span>
+            {{end}}
+        {{end}}
+    {{ end }}
 
     {{ range (.Paginator 5).Pages }} {{ partial "list-item" . }} {{ end }}
 
