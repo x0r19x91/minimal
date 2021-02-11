@@ -140,6 +140,6 @@ footer {
     color: #ff4848;
 }
 
-h4 a {
+h4 a, .pages a, footer a {
     color: #ff2f2f;
 }
