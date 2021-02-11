@@ -3,7 +3,7 @@
 <main>
 
     <h2>{{ .Title }}</h2>
-    {{ range .Site.Params.tags }}
+    {{ range .Params.tags }}
     <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}"><kbd class="item-tag">{{ . }}</kbd></a>
     {{ end }}
 
