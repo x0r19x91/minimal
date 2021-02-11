@@ -7,12 +7,14 @@
         <h5>{{ .Description }}</h5>
         {{ if isset .Params "link" }}
             <div>
-                <a style="color: #ff2f2f" href="{{ .Params.Link }}">
+                <a style="color: #006e32" href="{{ .Params.Link }}">
                     {{ .Params.Link }}
                 </a>
             </div>
         {{ end }}
+        <p>
         {{ partial "tags" . }}
+        </p>
     </div>
 
     <div align="left" class="content">{{ .Content }}</div>
