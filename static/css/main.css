@@ -1,109 +1,110 @@
-html, body {
-    height: 100%;
-}
-
+html,
 body {
-    padding-top: 55px;
-    display: flex;
-    /* text-align: center; */
-    flex-direction: column;
+ height:100%
 }
-
+.navbar-default .navbar-nav>li>a {
+ color:#fff
+}
+body {
+ color:#b9b9b9;
+ padding-top:55px;
+ display:flex;
+ text-align:center;
+ flex-direction:column;
+ font-size:medium
+}
 main {
-    margin: auto;
-    padding: 25px;
-    flex: 1 0 auto;
-    max-width: 750px;
+ margin:auto;
+ padding:25px;
+ flex:1 0 auto;
+ max-width:750px
 }
-
 img {
-    max-width: 100%;
+ max-width:100%
 }
-
-/* Homepage */
-
 .intro {
-    transform: translateY(22vh);
+ transform:translateY(22vh)
 }
-
-.intro > h1 {
-    color: #212121;
-    font-size: 12vh;
+.intro>h1 {
+ color:#fff;
+ font-size:8vh;
+ font-family:sacramento
 }
-
-.intro > h2 {
-    color: #757575;
-    font-size: 3vmin;
+.intro>h2 {
+ color:#fff;
+ font-size:3vmin
 }
-
-/* Page content */
-
+h1,
+h2,
+h3,
+h4 {
+ color:#fff
+}
 .content {
-    padding-top: 20px;
+ padding-top:20px
 }
-
-/* Profile picture */
-
 .profile {
-    width: 10vh;
-    height: 10vh;
-    border-radius: 50%;
+ width:10vh;
+ height:10vh;
+ border-radius:50%
 }
-
-/* Colored links */
-
-a:link, a:visited {
-    color: var(--accent);
+a:link,
+a:visited {
+ color:#61aeee
 }
-
+.post>a:visited {
+ color:#fff
+}
 a.icon:hover {
-    text-decoration: none;
+ text-decoration:none
 }
-
 a:hover {
-    color: var(--accent) !important;
+ color:var(--accent)!important
 }
-
-/* Copyright message */
-
 .copyright {
-    margin: 15px 0;
-    text-align: center;
+ margin:15px 0
 }
-
-/* Paginator */
-
 .pages {
-    padding: 15px 0;
+ padding:15px 0
 }
-
 .pages-icon {
-    padding: 0 15px;
+ padding:0 15px
 }
-
-/* List item for posts/projects */
-
 .item {
-    padding: 10px 0;
+ padding:10px 0
 }
-
 .item-tag {
-    background-color: var(--accent);
+ background-color:var(--accent)
 }
-
-/* Navigation icons */
-
 .navbar-icon {
-    font-size: 125%;
-    display: inline-block !important;
+ font-size:125%;
+ display:inline-block!important
 }
-
-/* Colored borders at top/bottom of page */
-
+.navbar-default {
+ background-color:#0f0f0f;
+ border-color:#0f0f0f
+}
 .navbar.navbar-default {
-    border-top: var(--border-width) solid var(--accent);
+ border-top:var(--border-width) solid var(--accent)
 }
-
+.navbar-default .navbar-brand {
+ color:#fff
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+ border-color:#0f0f0f
+}
+.item-tag {
+ background-color:#313131
+}
+pre {
+ background-color:#282c34;
+ border:1px solid #282c34
+}
+code {
+ color:#abb2bf;
+ background-color:#282c34
+}
 footer {
-    border-bottom: var(--border-width) solid var(--accent);
+ border-bottom:var(--border-width) solid var(--accent)
 }
