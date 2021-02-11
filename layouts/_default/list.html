@@ -5,9 +5,9 @@
     <h2>{{ .Title }}</h2>
     {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
 	  {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-        <a href={{ .RelPermalink }} title="All pages with tag <i>{{$name}}</i>">
+        <a class="badge badge-dark" href={{ .RelPermalink }} title="All pages with tag <i>{{$name}}</i>">
             {{$name}}
-            <span class="badge">{{$cnt}}</span>
+            <sup>{{$cnt}}</sup>
         </a>
 	  {{end}}
 	{{end}}
