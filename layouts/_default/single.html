@@ -5,6 +5,9 @@
     <div>
         <h2>{{ .Title }}</h2>
         <h5>{{ .Description }}</h5>
+        {{ if isset .Params.Link }}
+            <a>{{ .Params.Link }}</a>
+        {{ end }}
         {{ partial "tags" . }}
     </div>
 
