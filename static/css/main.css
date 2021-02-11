@@ -108,3 +108,7 @@ code {
 footer {
  border-bottom:var(--border-width) solid var(--accent)
 }
+
+pre>code {
+    text-align: left;
+}
