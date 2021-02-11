@@ -12,7 +12,7 @@ body {
 pre {
     background-color: inherit !important;
     padding: 12px !important;
-    border: none;
+    border: none !important;
 }
 
 pre > code {
