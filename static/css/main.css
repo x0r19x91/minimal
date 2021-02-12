@@ -166,3 +166,7 @@ footer {
 h4 a, h4 a:hover, .pages a, footer a, span a {
     color: #ff2f2f !important;
 }
+
+p code {
+    color: #ff2b2b !important;
+}
