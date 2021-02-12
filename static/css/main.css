@@ -153,6 +153,10 @@ a .item-tag:parent {
     color: #eee !important;
 }
 
+.navbar-default a:hover {
+    color: #fd1818 !important;
+}
+
 .navbar.navbar-default {
     border-top: var(--border-width) solid var(--accent);
 }
