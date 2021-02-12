@@ -172,3 +172,21 @@ h4 a, h4 a:hover, .pages a, footer a, span a {
 p code {
     color: #ff2b2b !important;
 }
+
+@media all and (max-device-width: 720px){
+    body {
+        font-size: 15px !important;
+    }
+}
+
+@media all and (max-device-width: 640px){
+    body {
+        font-size: 15px !important;
+    }
+}
+
+@media all and (max-device-width: 320px){
+    body {
+        font-size: 15px !important;
+    }
+}
