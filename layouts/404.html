@@ -2,10 +2,15 @@
 
 <script>
     const regex = /<br><font size = \\"\+2\\">([^<]+)<\/font>/gmi;
-    fetch("http://pages.cs.wisc.edu/~ballard/bofh/bofhserver.pl")
-    .then(e => e.text()).then(e => {
-        const match = e.match(regex);
-        document.getElementById("info").innerHTML = match.match[1];
+    $.ajax({
+        type: "GET",
+        url: "http://pages.cs.wisc.edu/~ballard/bofh/bofhserver.pl",
+        async:true,
+        crossDomain:true,
+        success: function (data) {
+            const match = data.match(regex);
+            document.getElementById("info").innerHTML = match.match[1];
+        }
     });
 </script>
 
