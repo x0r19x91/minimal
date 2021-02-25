@@ -47,7 +47,7 @@ kbd {
 
 code {
     text-align: left;
-    color:#ededed !important;
+    color: #ff2b2b !important;
     background-color: #121212 !important;
     font-family: TheSansMonoWeb !important;
 }
@@ -176,6 +176,7 @@ h4 a, h4 a:hover, .pages a, footer a, span a {
 
 p code {
     color: #ff2b2b !important;
+    font-family: TheSansMonoWeb !important;
 }
 
 @media all and (max-device-width: 720px){
